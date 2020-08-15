@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Marvel:wght@700&family=Open+Sans&family=Roboto+Condensed:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@700&family=Open+Sans&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css" />
     <title>YOUR TAXI</title>
   </head>
@@ -92,11 +90,114 @@
       </div>
     </section>
     <!-- finish tel -->
+    <!-- start form -->
+    <section class="booking_form">
+      <div class="center">
+        <div class="form">
+          <div class="booking_form_title">Booking Form</div>
+          <form action="">
+            <div class="input_small">
+              <input type="text" placeholder="Name:">
+              <input type="text" placeholder="Email:">
+              <input type="text" placeholder="From:">
+              <input type="text" placeholder="To:">
+            </div>
+            <div class="input_label">
+              <label>
+                <span>Time</span>
+                <input type="text">
+              </label>
+              <label>
+                <span>Date</span>
+                <input type="text" id="datepicker" placeholder="01/01/2020">
+              </label>
+            </div>
+            <div class="radios">
+              <div class="radio_title">Comfort</div>
+              <div class="radio_butons">
+                <label>
+                  <input type="radio" name="radio">
+                  <i></i>
+                  <span>Cheap</span>
+                </label>
+                <label>
+                  <input type="radio" name="radio">
+                  <i></i>
+                  <span>Standart</span>
+                </label>
+                <label>
+                  <input type="radio" name="radio">
+                  <i></i>
+                  <span>Lux</span>
+                </label>
+              </div>
+            </div>
+            <div class="select">
+              <label><ins>Adults</ins>
+                <select name="">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </label>
+              <label><ins>Children</ins>
+                <select name="">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </label>
+            </div>
+            <textarea class="textarea" name="" placeholder="Message:"></textarea>
+          </form>
+          <input type="submit" value="submit" class="button_form">
+        </div>
+    <!-- finish form -->
+    <!-- start car_links -->
+        <div class="car_links">
+          <ul>
+            <li><a href="#"><img src="images/car_1.jpg"><span>Economy</span></a></li>
+            <li><a href="#"><img src="images/car_2.jpg"><span>Standard</span></a></li>
+            <li><a href="#"><img src="images/car_3.jpg"><span>Lux</span></a></li>
+          </ul>
+        </div>
+    <!-- finish car_links -->
+      </div>
+    </section>
+    <!-- start footer -->
+    <footer class="footer">
+      <div class="center">
+        <div class="copy"><span>Tour<span>T</span>axi</span><ins> © 2014 | Privacy Policy</ins></div>
+        <div class="soc">
+          <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter"></a>
+          <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
+          <a href="https://www.telegram.org/"><img src="images/telegram.png" alt="telegram"></a>
+        </div>
+        <div class="phone">Call Us: <a href="tel:+18005596580">+ 1800 559 6580</a></div>
+      </div>
+      <!-- start button home -->
+      <div class="up">
+      <a href="#">
+        <img src="images/uphome.png" alt="uphome">
+      </a>
+      </div>
+    </footer>
+
+    
+  
+    <!-- finish button home-->
+  
 
 
     <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/pixelScreen.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/jselector.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
