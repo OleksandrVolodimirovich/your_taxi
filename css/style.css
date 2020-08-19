@@ -848,6 +848,112 @@ footer .phone a {
   background-color: rgba(245, 212, 90, .6);
   color: #000;
 }
+/* start page contacts */
+.contacts{
+  margin-top: 9px;
+}
+.contacts h2{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: #313030;
+  margin-bottom: 42px;
+}
+.contacts .contact_info{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 80px;
+}
+.contacts .contact_info h2{
+  margin-bottom: 24px;
+}
+.contacts .contact_info .left{
+  width: 472px;
+}
+.contacts .contact_info .left span{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #4a4a4a;
+  display: block;
+  margin-top: 21px;
+}
+.contacts .contact_info .left p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #878787;
+  margin-top: 21px;
+}
+.contacts .contact_info .left p a{
+  text-decoration: none;
+  color: #f5c306;
+}
+.contacts .contact_info .left p a:hover{
+  text-decoration: underline;
+}
+.contacts .contact_info .right{
+  width: 574px;
+}
+.contacts .contact_info .right h2{
+  margin-bottom: 30px;
+}
+.contacts .right form input[type="text"]{
+  background: transparent;
+  border: 1px solid #f0eeee;
+  width: 170px;
+  padding-left: 29px;
+  color: #000;
+}
+.contacts .right .flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+          margin-bottom: 10px;
+}
+.contacts .right form textarea{
+  height: 221px;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  border: 1px solid #f0eeee;
+  color: #000;
+  padding: 23px 31px;
+}
+.contacts .right form .btns{
+  text-align: right;
+}
+.contacts .right form input[type="submit"], 
+.contacts .right form input[type="reset"]{
+  width: 86px;
+  height: 38px;
+  background: #fdc903;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  border: 0;
+  line-height: 38px;
+  margin-top: 23px;
+  cursor: pointer;
+  transition: .2s;
+  margin-left: 3px;
+}
+.contacts .right form input[type="submit"]:hover, 
+.contacts .right form input[type="reset"]:hover{
+  background-color: rgba(245, 212, 90, .6);
+  color: #000;
+}
+
+
+
 
 
 /* font-family: 'Marvel', sans-serif;
