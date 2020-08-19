@@ -792,9 +792,62 @@ footer .phone a {
       -ms-transform: scale(1);
           transform: scale(1);
 }
-
-
-
+/* start page services */
+.services{
+  padding-top: 20px;
+  padding-bottom: 61px;
+  font-family: 'Open Sans', sans-serif;
+}
+.services h2{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #4a4a4a;
+  line-height: 20px;
+}
+.services ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+.services ul li{
+  width: 370px;
+  padding: 25px 21px;
+  margin-bottom: 30px;
+  background-color: #e6e6e8;
+}
+.services ul li img{
+  margin-bottom: 22px;
+}
+.services ul li span{
+  font-size: 20px;
+  line-height: 20px;
+}
+.services ul li p{
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+.services ul li a{
+  font-size: 14px;
+  padding: 11px 13px;
+  background-color: #f5d45a;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 24px;
+  color: #fff;
+  border-bottom: 1px solid transparent;
+  line-height: 11px;
+}
+.services ul li a:hover{
+  background-color: rgba(245, 212, 90, .6);
+  color: #000;
+}
 
 
 /* font-family: 'Marvel', sans-serif;
