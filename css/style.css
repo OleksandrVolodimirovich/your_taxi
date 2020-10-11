@@ -1,5 +1,6 @@
 *{
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin:0;
   padding:0;
   outline: 0;
@@ -9,13 +10,15 @@ ins{
   text-decoration: none;
 }
 .center {
-  width: 1170px;
+  /* width: 1170px; */
+  max-width: 1170px;
+  min-width: 320px;
   margin: 0 auto;
 }
 /* start header */
 .main_menu {
-  background: -webkit-gradient(linear, left top, left bottom, from(#e3e3e5), to(#e9e9ea));
   background: -o-linear-gradient(#e3e3e5, #e9e9ea);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e3e3e5), to(#e9e9ea));
   background: linear-gradient(#e3e3e5, #e9e9ea);
 }
 .main_menu nav {
@@ -55,6 +58,9 @@ ins{
 .slider{
   margin-top: 18px;
 }
+.slider img{
+  max-width: 100%;
+}
 .slider button {
   position: absolute;
   top: 50%;
@@ -67,6 +73,7 @@ ins{
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: -31px;
 }
 .slider button:hover{
   background-color: #e5b819;
@@ -150,6 +157,7 @@ ins{
 }
 .to_action .center{
   background: url("../images/taxi_ico.png") no-repeat left center, url("../images/taxi_ico.png") no-repeat right center;
+  background-size: 15%;
 }
 .to_action a{
   font-size: 60px;
@@ -514,8 +522,12 @@ footer {
   padding-bottom: 95px;
 }
 footer .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 footer .copy {
   font-family: "Roboto Condensed", sans-serif;
@@ -532,12 +544,20 @@ footer .copy ins {
   color: #d8d8d8;
 }
 footer .soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 footer .soc a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #fdc903;
   width: 58px;
   height: 58px;
@@ -564,9 +584,15 @@ footer .phone a {
   width: 61px;
   height: 75px;
   background: #d2d2d2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* start page ABOUT */
@@ -812,7 +838,8 @@ footer .phone a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 28px;
 }
 .services ul li{
@@ -943,6 +970,8 @@ footer .phone a {
   line-height: 38px;
   margin-top: 23px;
   cursor: pointer;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
   transition: .2s;
   margin-left: 3px;
 }
@@ -952,7 +981,164 @@ footer .phone a {
   color: #000;
 }
 
-
+/************
+@media screen 
+*************/
+@media screen and (max-width:1600px){
+  .up{
+    height: 30px;
+  }
+}
+@media screen and (max-width:1180px){
+  .booking_form .center, footer .center{
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width:1100px){
+  .triggers ul{
+    display: block;
+    text-align: center;
+  }
+  .triggers ul li{
+    text-align: left;
+    margin: 0 20px 40px 20px;
+  }
+}
+@media screen and (max-width:1024px){
+  .booking_form .car_links{
+    width: 433px;
+  }
+  .car_links ul li img{
+    max-width: 100%;
+  }
+}
+@media screen and (max-width:890px){
+  .booking_form .form{
+    width: 390px;
+  }
+  .booking_form .textarea{
+    width: 390px;
+  }
+  .booking_form .car_links{
+    width: 390px;
+  }
+}
+@media screen and (max-width:840px){
+  footer{
+    padding-bottom: 65px;
+  }
+  footer .center{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .soc{
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  footer .center div{
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width:810px){
+  .triggers {
+    padding-bottom: 50px;
+}
+  .booking_form .center{
+    display: block;
+  }
+  .booking_form .form{
+    margin: 0 auto;
+    padding-bottom: 0px;
+  }
+  .booking_form .car_links{
+    margin: 30px auto 0px;
+    padding-bottom: 75px;
+  }
+}
+@media screen and (max-width:700px){
+  .to_action{
+    font-size: 30px;
+  }
+  .to_action a{
+    font-size: 40px;
+  }
+  .to_action a::before{
+    top: 6px;
+  }
+}
+@media screen and (max-width:660px){
+  .main_menu nav a{
+    margin: 0;
+  }
+}
+@media screen and (max-width:540px){
+  .main_menu nav a{
+    display: block;
+  }
+}
+@media screen and (max-width:500px){
+  .slider button{
+    background-color: transparent;
+  }
+  .triggers ul li{
+    width: auto;
+    height: auto;
+    margin: 0 0 20px 0;
+    padding: 21px 10px 50px 20px;
+  }
+  .to_action{
+    font-size: 20px;
+  }
+  .to_action a{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width:410px){
+  .booking_form .form{
+    width: auto;
+  }
+  .booking_form .input_small input[type="text"]{
+    width: 100%;
+  }
+  .booking_form .input_label label input[type="text"] {
+    width: 85%;
+  }
+  .booking_form .textarea {
+    width: 100%;
+  }
+  .booking_form .car_links{
+    width: 100%;
+  }
+  .booking_form input[type="submit"]{
+    width: 100%;
+  }
+}
+@media screen and (max-width:400px){
+  .to_action .center{
+    background: none;
+  }
+  .booking_form .radio_butons label {
+    margin-right: 16px;
+  }
+  footer .copy{
+    font-size: 20px;
+  }
+  footer .soc a{
+    width: 50px;
+    height: 50px;
+  }
+  footer .phone a{
+    font-size: 30px;
+  }
+}
 
 
 
