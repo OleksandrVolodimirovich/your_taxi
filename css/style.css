@@ -6,6 +6,9 @@
   outline: 0;
   list-style:none;
 }
+body{
+  background:#ffffff;
+}
 ins{
   text-decoration: none;
 }
@@ -1064,6 +1067,9 @@ footer .phone a {
   }
 }
 @media screen and (max-width:700px){
+  .slider button {
+    background-color: transparent;
+  }
   .to_action{
     font-size: 30px;
   }
